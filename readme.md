@@ -40,10 +40,12 @@ CHIP8 < ROM file >
 
 The emulator uses standard key mapping.
 The keypad is mapped to qwerty keyboard as follows:
-1 2 3 4
-q w e r
-a s d f
-z x c v
+```
+1 2 3 4 | 1 2 3 C
+q w e r | 4 5 6 D
+a s d f | 7 8 9 E
+z x c v | A 0 B F
+```
 
 ## Implementation Details
 
