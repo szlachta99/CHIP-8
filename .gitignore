@@ -1,0 +1,6 @@
+test*
+build/
+roms/
+.vscode/
+ch8*
+CHIP8
