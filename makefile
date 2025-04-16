@@ -2,7 +2,7 @@
 CC = gcc
 CDEBUGFLAGS = -fdiagnostics-color=always -g
 CFLAGS = -Wall -std=c2x
-LDFLAGS = -lm -lncurses
+LDFLAGS = $(shell pkg-config --libs sdl3) -lm
 
 # Directories
 SRC_DIR = src/core

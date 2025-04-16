@@ -20,6 +20,7 @@ void ExecuteInstruction(CHIP8 *chip8, Instruction instruction)
                 for (int i = 0; i < 32; i++) {
                     chip8->screen[i] = 0;
                 }
+                chip8->screen_changed = 1;
                 break;
                 case 0x00EE: // RET
                 chip8->program_counter = chip8->stack[--chip8->stack_pointer];
