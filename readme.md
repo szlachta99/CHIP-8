@@ -19,7 +19,7 @@ CHIP-8 is an interpreted programming language developed in the 1970s, designed t
 ### Prerequisites
 
 - linux
-- ncurses
+- SDL3
 - make
 
 ### Build
@@ -36,11 +36,14 @@ make disassembler # builds disassembler
 CHIP8 < ROM file >
 ```
 
+You can find roms [here](https://github.com/kripod/chip8-roms)
+
 ## Controls
 
 The emulator uses standard key mapping.
 The keypad is mapped to qwerty keyboard as follows:
-```
+
+``` none
 1 2 3 4 | 1 2 3 C
 q w e r | 4 5 6 D
 a s d f | 7 8 9 E
@@ -50,6 +53,7 @@ z x c v | A 0 B F
 ## Implementation Details
 
 The emulator implements the following components:
+
 - CPU with 35 opcodes
 - 4K memory
 - 16 8-bit registers
