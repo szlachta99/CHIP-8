@@ -8,7 +8,7 @@
 
 #include <SDL3/SDL.h>
 
-#define CPU_FREQ 500 // CPU frequency in Hz
+#define CPU_FREQ 500       // CPU frequency in Hz
 #define BEEP_FREQUENCY 350 // Frequency of beep sound in Hz
 #define BEEP_AMPLITUDE 128 // Amplitude of beep sound
 
